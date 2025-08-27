@@ -34,25 +34,27 @@ input("Scan the QR code on WhatsApp Web and press Enter to continue...")
 
 #5A3
 names = [
-    "Dimple", "Karan", "Kush", "Omkar", "Preet", "Priyank", "Sayantan", "Tayaba", "Yash"
-
+    "Yashii", "Abhishek", "Pramendra"
 ]
 failed_names = []
 
-message = """Hey!\n I'm excited to share the LinkedIn page for my company, Varcode EdTech! We're all about helping learners grow with practical coding skills and industry-ready courses.\nIt'd be great if you could check it out, give it a *follow*, and explore future opportunities with us!\nHere's the link: https://www.linkedin.com/company/varcode-edtech/ \nThanks for your support—it means a lot!"""
+message = """
+\nHey, I'm excited to share the LinkedIn page for my company, Varcode EdTech! We're all about helping learners grow with practical coding skills and industry-ready courses.\n\nIt'd be great if you could check it out, give it a follow, and explore future opportunities with us!\n\nVisit us: https://varcode.in/\nFollow us on: https://www.linkedin.com/company/varcode-edtech/\n\nThanks for your support—it means a lot
+"""
 
 # Loop through each name
 for name in names:
     try:
         # Locate the message input box using a more specific XPath
-        search_box = driver.find_element(By.XPATH, '//span[@data-icon="search"]')
+        search_box = driver.find_element(By.XPATH, '//span[@data-icon="search-refreshed-thin"]')
         search_box.click()
         # enter the name to the focused input box
         search_box = driver.find_element(By.XPATH, '//div[@contenteditable="true"]')
         search_box.send_keys(name + Keys.ENTER)
         time.sleep(1)  # Small delay to avoid issues
         message_box = driver.find_element(By.XPATH, '//div[@contenteditable="true"][@aria-label="Type a message"]')
-        message_box.send_keys(message + Keys.ENTER)
+        message_box.send_keys(message)
+        message_box.send_keys(Keys.ENTER)
         
         time.sleep(3)  # Small delay to avoid issues
 
