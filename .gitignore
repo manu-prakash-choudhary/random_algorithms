@@ -1,0 +1,13 @@
+*.cpython
+__pycache__/
+.env
+.vscode/
+.idea/
+.DS_Store
+*.log
+node_modules
+.ipynb_checkpoints
+.exe
+*.dll
+*.so
+*.dylib

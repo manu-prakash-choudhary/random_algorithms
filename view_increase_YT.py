@@ -15,7 +15,7 @@ def run_yt():
         # conn = psycopg2.connect(
         #     dbname='postgres',
         #     user='readonly_user.ihuewstpkilkxjqjewkp',
-        #     password='Hello123',
+        #     password='',
         #     host='aws-0-ap-south-1.pooler.supabase.com',
         #     port='5432',
             
@@ -24,7 +24,7 @@ def run_yt():
         conn = psycopg2.connect(
             dbname='postgres',
             user='postgres.ihuewstpkilkxjqjewkp',
-            password='manu0331',
+            password='',
             host='aws-0-ap-south-1.pooler.supabase.com',
             port='5432',
             

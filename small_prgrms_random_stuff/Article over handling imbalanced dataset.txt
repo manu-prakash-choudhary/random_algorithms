@@ -1,0 +1,22 @@
+Article over handling imbalanced dataset 
+Introduction
+
+Nowadays everyday we are generating tons of data most of which cannot be used for various Machine Learning models reason being either data is not in proper format or it is imbalanced.
+In this article I am going to discuss about 5 major data handling techniques which are pretty handful while creating a Artificial Neural Network, even those people who are satisfied with their
+result should always check whether there data is imbalanced or not. Well, what is imbalanced data and how can we handle it will be discussed in the later part of this article.
+ But for now you should understand that even if your data has been unwrangled sometimes it can decieve you without even making you realize.
+
+
+What is Imbalanced Data
+
+    Imbalanced data is that data whose targeted values are biased in a particular for example if you have data of covid patients(positive or not) and you are looking to find whether the person
+    has covid or not, In this you can note that most of persons are not covid positive so while performing model training what happens is that presence of too much target values of person being
+    not positive will change our weights and biases.
+    
+Well there are many ways through which we can handle imb
+
+   1. Oversampling of Minority using SMOTE
+   2. Oversampling of Minority using Duplication(Produce Synthetic samples from data using K nearest algorithm)
+   3. Ensemble Method.
+   4. Focal Loss
+   5. UnderSampling majority data(not preferred)
